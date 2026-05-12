@@ -1,2 +1,14 @@
-name = "neon-player"
-pages_build_output_dir = "./public"
+name = "neon-api"
+main = "worker.tsx"
+compatibility_date = "2026-05-12"
+
+# Optional: only keep this if your dependency chain needs Node.js polyfills.
+# compatibility_flags = ["nodejs_compat"]
+
+[vars]
+# Non-sensitive configuration only.
+# TABLE_NAME = "connector"
+
+# Sensitive values must be added as secrets, not placed in this file:
+#   wrangler secret put TURSO_DATABASE_URL
+#   wrangler secret put TURSO_AUTH_TOKEN
